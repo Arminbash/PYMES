@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8d9022c777964986a9175188fa18111e" Name="Diagram1">
+        <EntityTypeShape EntityType="PymesModel.C__MigrationHistory" Width="1.5" PointX="8.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PymesModel.AspNetRoles" Width="1.5" PointX="1.5" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PymesModel.AspNetUserClaims" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PymesModel.AspNetUserLogins" Width="1.5" PointX="3.75" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PymesModel.AspNetUsers" Width="1.5" PointX="1.5" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PymesModel.CostoProduccion" Width="1.5" PointX="10.5" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PymesModel.CuentasxPagarProveedor" Width="1.5" PointX="7.5" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PymesModel.DetalleVenta" Width="1.5" PointX="8.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="PymesModel.InventarioMateriaPrima" Width="1.5" PointX="7.5" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PymesModel.InventarioProducto" Width="1.5" PointX="8.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PymesModel.MateriaPrima" Width="1.5" PointX="5.25" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PymesModel.PagoManoObra" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PymesModel.Persona" Width="1.5" PointX="0.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PymesModel.Producto" Width="1.5" PointX="6" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PymesModel.Proveedor" Width="1.5" PointX="3" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PymesModel.sysdiagrams" Width="1.5" PointX="10.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PymesModel.Usuario" Width="1.5" PointX="3.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PymesModel.Venta" Width="1.5" PointX="6" PointY="8.5" IsExpanded="true" />
+        <AssociationConnector Association="PymesModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_User_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="PymesModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="PymesModel.FK__Usuario__activo__160F4887" ManuallyRouted="false" />
+        <AssociationConnector Association="PymesModel.FK__CostoProd__IdPro__4C6B5938" ManuallyRouted="false" />
+        <AssociationConnector Association="PymesModel.FK__CostoProd__Preci__4B7734FF" ManuallyRouted="false" />
+        <AssociationConnector Association="PymesModel.FK__CuentasxP__IdMat__40F9A68C" ManuallyRouted="false" />
+        <AssociationConnector Association="PymesModel.FK__CuentasxP__IdPro__41EDCAC5" ManuallyRouted="false" />
+        <AssociationConnector Association="PymesModel.FK__DetalleVe__IdPro__2CF2ADDF" ManuallyRouted="false" />
+        <AssociationConnector Association="PymesModel.FK__DetalleVe__IdVen__2DE6D218" ManuallyRouted="false" />
+        <AssociationConnector Association="PymesModel.FK__Inventari__IdMat__3C34F16F" ManuallyRouted="false" />
+        <AssociationConnector Association="PymesModel.FK__Inventari__IdPro__32AB8735" ManuallyRouted="false" />
+        <AssociationConnector Association="PymesModel.FK__MateriaPr__activ__37703C52" ManuallyRouted="false" />
+        <AssociationConnector Association="PymesModel.FK__PagoManoO__IdPer__46B27FE2" ManuallyRouted="false" />
+        <AssociationConnector Association="PymesModel.FK__Proveedor__activ__1EA48E88" ManuallyRouted="false" />
+        <AssociationConnector Association="PymesModel.FK__Venta__activo__2739D489" ManuallyRouted="false" />
+        <AssociationConnector Association="PymesModel.FK__Venta__IdUsuario__282DF8C2" ManuallyRouted="false" />
+        <AssociationConnector Association="PymesModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

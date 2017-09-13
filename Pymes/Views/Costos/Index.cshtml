@@ -1,0 +1,63 @@
+﻿@model IEnumerable<DataLayer.CostoProduccion>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PagoManoObra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ValorUnidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PreciodeVenta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Producto.NombreProducto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MateriaPrima.NombreMateriaPrima)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cantidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PagoManoObra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ValorUnidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PreciodeVenta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Producto.NombreProducto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MateriaPrima.NombreMateriaPrima)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdCosto }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdCosto }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdCosto })
+        </td>
+    </tr>
+}
+
+</table>

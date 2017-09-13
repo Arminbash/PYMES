@@ -1,0 +1,50 @@
+﻿@model DataLayer.InventarioMateriaPrima
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>InventarioMateriaPrima</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UnidadMedida)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnidadMedida)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorxUnidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorxUnidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidaExistencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CantidaExistencia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MateriaPrima.NombreMateriaPrima)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MateriaPrima.NombreMateriaPrima)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdInventarioMateriaPrima }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

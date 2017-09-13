@@ -1,0 +1,12 @@
+c:\Users\Armin\documents\visual studio 2013\Projects\Pymes\DataLayer\bin\Debug\DataLayer.dll.config
+c:\Users\Armin\documents\visual studio 2013\Projects\Pymes\DataLayer\bin\Debug\DataLayer.dll
+c:\Users\Armin\documents\visual studio 2013\Projects\Pymes\DataLayer\bin\Debug\DataLayer.pdb
+c:\Users\Armin\documents\visual studio 2013\Projects\Pymes\DataLayer\bin\Debug\EntityFramework.dll
+c:\Users\Armin\documents\visual studio 2013\Projects\Pymes\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\Armin\documents\visual studio 2013\Projects\Pymes\DataLayer\bin\Debug\EntityFramework.xml
+c:\Users\Armin\documents\visual studio 2013\Projects\Pymes\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+c:\Users\Armin\documents\visual studio 2013\Projects\Pymes\DataLayer\bin\Debug\es\EntityFramework.resources.dll
+c:\Users\Armin\documents\visual studio 2013\Projects\Pymes\DataLayer\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+c:\Users\Armin\documents\visual studio 2013\Projects\Pymes\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+c:\Users\Armin\documents\visual studio 2013\Projects\Pymes\DataLayer\obj\Debug\DataLayer.dll
+c:\Users\Armin\documents\visual studio 2013\Projects\Pymes\DataLayer\obj\Debug\DataLayer.pdb

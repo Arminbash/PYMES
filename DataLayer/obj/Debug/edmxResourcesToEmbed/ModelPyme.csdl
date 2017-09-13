@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PymesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUsers" Relationship="Self.AspNetUserRoles" FromRole="AspNetRoles" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="User_Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUsers" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_User_Id" FromRole="AspNetUserClaims" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogins">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+    </Key>
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LoginProvider" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProviderKey" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUsers" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogins" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Discriminator" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_User_Id" FromRole="AspNetUsers" ToRole="AspNetUserClaims" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserLogins" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK__Usuario__activo__160F4887" FromRole="AspNetUsers" ToRole="Usuario" />
+    <NavigationProperty Name="AspNetRoles" Relationship="Self.AspNetUserRoles" FromRole="AspNetUsers" ToRole="AspNetRoles" />
+  </EntityType>
+  <EntityType Name="CostoProduccion">
+    <Key>
+      <PropertyRef Name="IdCosto" />
+    </Key>
+    <Property Name="IdCosto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdProducto" Type="Int32" Nullable="false" />
+    <Property Name="IdMateriaPrima" Type="Int32" Nullable="false" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <Property Name="PagoManoObra" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="ValorUnidad" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="PreciodeVenta" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__CostoProd__IdPro__4C6B5938" FromRole="CostoProduccion" ToRole="Producto" />
+    <NavigationProperty Name="MateriaPrima" Relationship="Self.FK__CostoProd__Preci__4B7734FF" FromRole="CostoProduccion" ToRole="MateriaPrima" />
+  </EntityType>
+  <EntityType Name="CuentasxPagarProveedor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdProveedor" Type="Int32" Nullable="false" />
+    <Property Name="IdMateriaPrima" Type="Int32" Nullable="false" />
+    <Property Name="CantidadComprada" Type="Int32" Nullable="false" />
+    <Property Name="precio" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Total" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="MateriaPrima" Relationship="Self.FK__CuentasxP__IdMat__40F9A68C" FromRole="CuentasxPagarProveedor" ToRole="MateriaPrima" />
+    <NavigationProperty Name="Proveedor" Relationship="Self.FK__CuentasxP__IdPro__41EDCAC5" FromRole="CuentasxPagarProveedor" ToRole="Proveedor" />
+  </EntityType>
+  <EntityType Name="DetalleVenta">
+    <Key>
+      <PropertyRef Name="IdDetalleVenta" />
+    </Key>
+    <Property Name="IdDetalleVenta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdProducto" Type="Int32" Nullable="false" />
+    <Property Name="IdVenta" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__DetalleVe__IdPro__2CF2ADDF" FromRole="DetalleVenta" ToRole="Producto" />
+    <NavigationProperty Name="Venta" Relationship="Self.FK__DetalleVe__IdVen__2DE6D218" FromRole="DetalleVenta" ToRole="Venta" />
+  </EntityType>
+  <EntityType Name="InventarioMateriaPrima">
+    <Key>
+      <PropertyRef Name="IdInventarioMateriaPrima" />
+    </Key>
+    <Property Name="IdInventarioMateriaPrima" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdMateriaPrima" Type="Int32" Nullable="false" />
+    <Property Name="UnidadMedida" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ValorxUnidad" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="CantidaExistencia" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="MateriaPrima" Relationship="Self.FK__Inventari__IdMat__3C34F16F" FromRole="InventarioMateriaPrima" ToRole="MateriaPrima" />
+  </EntityType>
+  <EntityType Name="InventarioProducto">
+    <Key>
+      <PropertyRef Name="IdInventarioProcducto" />
+    </Key>
+    <Property Name="IdInventarioProcducto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdProducto" Type="Int32" Nullable="false" />
+    <Property Name="UnidadMedida" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ValorxUnidad" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="CantidaExistencia" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__Inventari__IdPro__32AB8735" FromRole="InventarioProducto" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="MateriaPrima">
+    <Key>
+      <PropertyRef Name="IdMatriaPrima" />
+    </Key>
+    <Property Name="IdMatriaPrima" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdProveedor" Type="Int32" Nullable="false" />
+    <Property Name="NombreMateriaPrima" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PrecioXUnidad" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="CostoProduccion" Relationship="Self.FK__CostoProd__Preci__4B7734FF" FromRole="MateriaPrima" ToRole="CostoProduccion" />
+    <NavigationProperty Name="CuentasxPagarProveedor" Relationship="Self.FK__CuentasxP__IdMat__40F9A68C" FromRole="MateriaPrima" ToRole="CuentasxPagarProveedor" />
+    <NavigationProperty Name="InventarioMateriaPrima" Relationship="Self.FK__Inventari__IdMat__3C34F16F" FromRole="MateriaPrima" ToRole="InventarioMateriaPrima" />
+    <NavigationProperty Name="Proveedor" Relationship="Self.FK__MateriaPr__activ__37703C52" FromRole="MateriaPrima" ToRole="Proveedor" />
+  </EntityType>
+  <EntityType Name="PagoManoObra">
+    <Key>
+      <PropertyRef Name="IdPagoManoObra" />
+    </Key>
+    <Property Name="IdPagoManoObra" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdPersona" Type="Int32" Nullable="false" />
+    <Property Name="HorasTrabajadas" Type="Int32" Nullable="false" />
+    <Property Name="PagoXHora" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Total" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK__PagoManoO__IdPer__46B27FE2" FromRole="PagoManoObra" ToRole="Persona" />
+  </EntityType>
+  <EntityType Name="Persona">
+    <Key>
+      <PropertyRef Name="IdPersona" />
+    </Key>
+    <Property Name="IdPersona" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Cedula" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="PagoManoObra" Relationship="Self.FK__PagoManoO__IdPer__46B27FE2" FromRole="Persona" ToRole="PagoManoObra" />
+    <NavigationProperty Name="Proveedor" Relationship="Self.FK__Proveedor__activ__1EA48E88" FromRole="Persona" ToRole="Proveedor" />
+    <NavigationProperty Name="Venta" Relationship="Self.FK__Venta__activo__2739D489" FromRole="Persona" ToRole="Venta" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="IdProducto" />
+    </Key>
+    <Property Name="IdProducto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreProducto" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PrecioXUnidad" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="CostoProduccion" Relationship="Self.FK__CostoProd__IdPro__4C6B5938" FromRole="Producto" ToRole="CostoProduccion" />
+    <NavigationProperty Name="DetalleVenta" Relationship="Self.FK__DetalleVe__IdPro__2CF2ADDF" FromRole="Producto" ToRole="DetalleVenta" />
+    <NavigationProperty Name="InventarioProducto" Relationship="Self.FK__Inventari__IdPro__32AB8735" FromRole="Producto" ToRole="InventarioProducto" />
+  </EntityType>
+  <EntityType Name="Proveedor">
+    <Key>
+      <PropertyRef Name="IdProveedor" />
+    </Key>
+    <Property Name="IdProveedor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdPersona" Type="Int32" Nullable="false" />
+    <Property Name="Nombres" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Correo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Telefono" Type="Int32" Nullable="false" />
+    <Property Name="activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="CuentasxPagarProveedor" Relationship="Self.FK__CuentasxP__IdPro__41EDCAC5" FromRole="Proveedor" ToRole="CuentasxPagarProveedor" />
+    <NavigationProperty Name="MateriaPrima" Relationship="Self.FK__MateriaPr__activ__37703C52" FromRole="Proveedor" ToRole="MateriaPrima" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK__Proveedor__activ__1EA48E88" FromRole="Proveedor" ToRole="Persona" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdUser" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NombresUsuario" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Contraseña" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="AspNetUsers" Relationship="Self.FK__Usuario__activo__160F4887" FromRole="Usuario" ToRole="AspNetUsers" />
+    <NavigationProperty Name="Venta" Relationship="Self.FK__Venta__IdUsuario__282DF8C2" FromRole="Usuario" ToRole="Venta" />
+  </EntityType>
+  <EntityType Name="Venta">
+    <Key>
+      <PropertyRef Name="IdVenta" />
+    </Key>
+    <Property Name="IdVenta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdPersona" Type="Int32" Nullable="false" />
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CantidaPedita" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Int32" Nullable="false" />
+    <Property Name="activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="DetalleVenta" Relationship="Self.FK__DetalleVe__IdVen__2DE6D218" FromRole="Venta" ToRole="DetalleVenta" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK__Venta__activo__2739D489" FromRole="Venta" ToRole="Persona" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK__Venta__IdUsuario__282DF8C2" FromRole="Venta" ToRole="Usuario" />
+  </EntityType>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_User_Id">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="User_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Usuario__activo__160F4887">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CostoProd__IdPro__4C6B5938">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
+    <End Role="CostoProduccion" Type="Self.CostoProduccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IdProducto" />
+      </Principal>
+      <Dependent Role="CostoProduccion">
+        <PropertyRef Name="IdProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CostoProd__Preci__4B7734FF">
+    <End Role="MateriaPrima" Type="Self.MateriaPrima" Multiplicity="1" />
+    <End Role="CostoProduccion" Type="Self.CostoProduccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MateriaPrima">
+        <PropertyRef Name="IdMatriaPrima" />
+      </Principal>
+      <Dependent Role="CostoProduccion">
+        <PropertyRef Name="IdMateriaPrima" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CuentasxP__IdMat__40F9A68C">
+    <End Role="MateriaPrima" Type="Self.MateriaPrima" Multiplicity="1" />
+    <End Role="CuentasxPagarProveedor" Type="Self.CuentasxPagarProveedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MateriaPrima">
+        <PropertyRef Name="IdMatriaPrima" />
+      </Principal>
+      <Dependent Role="CuentasxPagarProveedor">
+        <PropertyRef Name="IdMateriaPrima" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CuentasxP__IdPro__41EDCAC5">
+    <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+    <End Role="CuentasxPagarProveedor" Type="Self.CuentasxPagarProveedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Proveedor">
+        <PropertyRef Name="IdProveedor" />
+      </Principal>
+      <Dependent Role="CuentasxPagarProveedor">
+        <PropertyRef Name="IdProveedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleVe__IdPro__2CF2ADDF">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
+    <End Role="DetalleVenta" Type="Self.DetalleVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IdProducto" />
+      </Principal>
+      <Dependent Role="DetalleVenta">
+        <PropertyRef Name="IdProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleVe__IdVen__2DE6D218">
+    <End Role="Venta" Type="Self.Venta" Multiplicity="1" />
+    <End Role="DetalleVenta" Type="Self.DetalleVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Venta">
+        <PropertyRef Name="IdVenta" />
+      </Principal>
+      <Dependent Role="DetalleVenta">
+        <PropertyRef Name="IdVenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Inventari__IdMat__3C34F16F">
+    <End Role="MateriaPrima" Type="Self.MateriaPrima" Multiplicity="1" />
+    <End Role="InventarioMateriaPrima" Type="Self.InventarioMateriaPrima" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MateriaPrima">
+        <PropertyRef Name="IdMatriaPrima" />
+      </Principal>
+      <Dependent Role="InventarioMateriaPrima">
+        <PropertyRef Name="IdMateriaPrima" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Inventari__IdPro__32AB8735">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
+    <End Role="InventarioProducto" Type="Self.InventarioProducto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IdProducto" />
+      </Principal>
+      <Dependent Role="InventarioProducto">
+        <PropertyRef Name="IdProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MateriaPr__activ__37703C52">
+    <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+    <End Role="MateriaPrima" Type="Self.MateriaPrima" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Proveedor">
+        <PropertyRef Name="IdProveedor" />
+      </Principal>
+      <Dependent Role="MateriaPrima">
+        <PropertyRef Name="IdProveedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PagoManoO__IdPer__46B27FE2">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="1" />
+    <End Role="PagoManoObra" Type="Self.PagoManoObra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="IdPersona" />
+      </Principal>
+      <Dependent Role="PagoManoObra">
+        <PropertyRef Name="IdPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Proveedor__activ__1EA48E88">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="1" />
+    <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="IdPersona" />
+      </Principal>
+      <Dependent Role="Proveedor">
+        <PropertyRef Name="IdPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Venta__activo__2739D489">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="1" />
+    <End Role="Venta" Type="Self.Venta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="IdPersona" />
+      </Principal>
+      <Dependent Role="Venta">
+        <PropertyRef Name="IdPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Venta__IdUsuario__282DF8C2">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Venta" Type="Self.Venta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="Venta">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="*" />
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="DefaultConnection" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" />
+    <EntitySet Name="CostoProduccion" EntityType="Self.CostoProduccion" />
+    <EntitySet Name="CuentasxPagarProveedor" EntityType="Self.CuentasxPagarProveedor" />
+    <EntitySet Name="DetalleVenta" EntityType="Self.DetalleVenta" />
+    <EntitySet Name="InventarioMateriaPrima" EntityType="Self.InventarioMateriaPrima" />
+    <EntitySet Name="InventarioProducto" EntityType="Self.InventarioProducto" />
+    <EntitySet Name="MateriaPrima" EntityType="Self.MateriaPrima" />
+    <EntitySet Name="PagoManoObra" EntityType="Self.PagoManoObra" />
+    <EntitySet Name="Persona" EntityType="Self.Persona" />
+    <EntitySet Name="Producto" EntityType="Self.Producto" />
+    <EntitySet Name="Proveedor" EntityType="Self.Proveedor" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <EntitySet Name="Venta" EntityType="Self.Venta" />
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_User_Id" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_User_Id">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Usuario__activo__160F4887" Association="Self.FK__Usuario__activo__160F4887">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CostoProd__IdPro__4C6B5938" Association="Self.FK__CostoProd__IdPro__4C6B5938">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="CostoProduccion" EntitySet="CostoProduccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CostoProd__Preci__4B7734FF" Association="Self.FK__CostoProd__Preci__4B7734FF">
+      <End Role="MateriaPrima" EntitySet="MateriaPrima" />
+      <End Role="CostoProduccion" EntitySet="CostoProduccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CuentasxP__IdMat__40F9A68C" Association="Self.FK__CuentasxP__IdMat__40F9A68C">
+      <End Role="MateriaPrima" EntitySet="MateriaPrima" />
+      <End Role="CuentasxPagarProveedor" EntitySet="CuentasxPagarProveedor" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CuentasxP__IdPro__41EDCAC5" Association="Self.FK__CuentasxP__IdPro__41EDCAC5">
+      <End Role="Proveedor" EntitySet="Proveedor" />
+      <End Role="CuentasxPagarProveedor" EntitySet="CuentasxPagarProveedor" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleVe__IdPro__2CF2ADDF" Association="Self.FK__DetalleVe__IdPro__2CF2ADDF">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="DetalleVenta" EntitySet="DetalleVenta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleVe__IdVen__2DE6D218" Association="Self.FK__DetalleVe__IdVen__2DE6D218">
+      <End Role="Venta" EntitySet="Venta" />
+      <End Role="DetalleVenta" EntitySet="DetalleVenta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Inventari__IdMat__3C34F16F" Association="Self.FK__Inventari__IdMat__3C34F16F">
+      <End Role="MateriaPrima" EntitySet="MateriaPrima" />
+      <End Role="InventarioMateriaPrima" EntitySet="InventarioMateriaPrima" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Inventari__IdPro__32AB8735" Association="Self.FK__Inventari__IdPro__32AB8735">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="InventarioProducto" EntitySet="InventarioProducto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MateriaPr__activ__37703C52" Association="Self.FK__MateriaPr__activ__37703C52">
+      <End Role="Proveedor" EntitySet="Proveedor" />
+      <End Role="MateriaPrima" EntitySet="MateriaPrima" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PagoManoO__IdPer__46B27FE2" Association="Self.FK__PagoManoO__IdPer__46B27FE2">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="PagoManoObra" EntitySet="PagoManoObra" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Proveedor__activ__1EA48E88" Association="Self.FK__Proveedor__activ__1EA48E88">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Proveedor" EntitySet="Proveedor" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Venta__activo__2739D489" Association="Self.FK__Venta__activo__2739D489">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Venta" EntitySet="Venta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Venta__IdUsuario__282DF8C2" Association="Self.FK__Venta__IdUsuario__282DF8C2">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Venta" EntitySet="Venta" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="Self.AspNetUserRoles">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,58 @@
+﻿@model DataLayer.CuentasxPagarProveedor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CuentasxPagarProveedor</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidadComprada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CantidadComprada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Total)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Total)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MateriaPrima.NombreMateriaPrima)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MateriaPrima.NombreMateriaPrima)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Proveedor.Nombres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Proveedor.Nombres)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

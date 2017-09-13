@@ -1,0 +1,66 @@
+﻿@model DataLayer.CostoProduccion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CostoProduccion</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PagoManoObra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PagoManoObra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorUnidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorUnidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PreciodeVenta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PreciodeVenta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Producto.NombreProducto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Producto.NombreProducto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MateriaPrima.NombreMateriaPrima)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MateriaPrima.NombreMateriaPrima)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdCosto }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
