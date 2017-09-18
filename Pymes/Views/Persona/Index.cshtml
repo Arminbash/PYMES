@@ -4,12 +4,15 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Personas</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <a href="~/Persona/Create" class="btn btn-primary">Crear Nuevo</a>
+
+    @*@Html.ActionLink("Create New", "Create")*@
 </p>
-<table class="table">
+<table id="grid" class="table">
+    <thead>
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Nombre)
@@ -28,7 +31,8 @@
         </th>
         <th></th>
     </tr>
-
+    </thead>
+<tbody>
 @foreach (var item in Model) {
     <tr>
         <td>
@@ -47,11 +51,18 @@
             @Html.DisplayFor(modelItem => item.activo)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.IdPersona }) |
-            @Html.ActionLink("Details", "Details", new { id=item.IdPersona }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.IdPersona })
+            <div class="col-md-2">
+
+            </div>
+           <a href="@Url.Action("Edit", "Persona", new { id=item.IdPersona }) " class="btn btn-danger">Editar</a> 
+            <a href="@Url.Action("Details", "Persona", new { id=item.IdPersona}) " class="btn btn-primary">Detalles</a>
+            <a href="@Url.Action("Delete", "Persona", new  {id=item.IdPersona }) " class="btn btn-default" style="background-color:#ffd800">Eliminar</a>
+" 
+
+            @*@Html.ActionLink("Details", "Details", new { id=item.IdPersona }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdPersona })*@
         </td>
     </tr>
 }
-
+    </tbody>
 </table>

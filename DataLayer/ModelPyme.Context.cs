@@ -13,10 +13,10 @@ namespace DataLayer
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DefaultConnection : DbContext
+    public partial class DefaultConnection2 : DbContext
     {
-        public DefaultConnection()
-            : base("name=DefaultConnection")
+        public DefaultConnection2()
+            : base("name=DefaultConnection2")
         {
         }
     

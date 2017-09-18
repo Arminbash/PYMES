@@ -4,12 +4,15 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Productos</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+
+    <a href="~/Productos/Create" class="btn btn-primary">Crear Nuevo </a>
+    @*@Html.ActionLink("Create New", "Create")*@
 </p>
-<table class="table">
+<table id="grid" class="table">
+    <thead>
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.NombreProducto)
@@ -25,7 +28,8 @@
         </th>
         <th></th>
     </tr>
-
+        </thead>
+    <tbody>
 @foreach (var item in Model) {
     <tr>
         <td>
@@ -41,11 +45,16 @@
             @Html.DisplayFor(modelItem => item.activo)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.IdProducto }) |
+
+            <a href="@Url.Action("Edit", "Productos", new { id=item.IdProducto }) " class="btn btn-danger">Editar</a>
+            <a href="@Url.Action("Details", "Productos", new { id=item.IdProducto}) " class="btn btn-primary">Detalles</a>
+            <a href="@Url.Action("Delete", "Productos", new  {id=item.IdProducto }) " class="btn btn-default" style="background-color:#ffd800; color:#ffffff !important;">Eliminar</a>
+
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.IdProducto }) |
             @Html.ActionLink("Details", "Details", new { id=item.IdProducto }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.IdProducto })
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdProducto })*@
         </td>
     </tr>
 }
-
+        </tbody>
 </table>

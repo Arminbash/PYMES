@@ -7,9 +7,11 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <a href="~/InventarioProducto/Create" class="btn btn-primary">Crear Nuevo</a>
+    @*@Html.ActionLink("Create New", "Create")*@
 </p>
-<table class="table">
+<table id="grid" class="table">
+    <thead>
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.UnidadMedida)
@@ -25,7 +27,8 @@
         </th>
         <th></th>
     </tr>
-
+        </thead>
+    <tbody>
 @foreach (var item in Model) {
     <tr>
         <td>
@@ -41,11 +44,11 @@
             @Html.DisplayFor(modelItem => item.Producto.NombreProducto)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.IdInventarioProcducto }) |
-            @Html.ActionLink("Details", "Details", new { id=item.IdInventarioProcducto }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.IdInventarioProcducto })
+            <a href="@Url.Action("Edit", "InventarioProducto", new { id=item.IdInventarioProcducto }) " class="btn btn-danger">Editar</a>
+            <a href="@Url.Action("Details", "InventarioProducto", new { id=item.IdInventarioProcducto}) " class="btn btn-primary">Detalles</a>
+            <a href="@Url.Action("Delete", "InventarioProducto", new  {id=item.IdInventarioProcducto }) " class="btn btn-default" style="background-color:#ffd800; color:#ffffff !important;">Eliminar</a>
         </td>
     </tr>
 }
-
+        </tbody>
 </table>

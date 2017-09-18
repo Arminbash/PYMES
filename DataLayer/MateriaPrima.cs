@@ -14,6 +14,7 @@ namespace DataLayer
     
     public partial class MateriaPrima
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public MateriaPrima()
         {
             this.CostoProduccion = new HashSet<CostoProduccion>();
@@ -28,8 +29,11 @@ namespace DataLayer
         public string Descripcion { get; set; }
         public bool activo { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CostoProduccion> CostoProduccion { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CuentasxPagarProveedor> CuentasxPagarProveedor { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<InventarioMateriaPrima> InventarioMateriaPrima { get; set; }
         public virtual Proveedor Proveedor { get; set; }
     }

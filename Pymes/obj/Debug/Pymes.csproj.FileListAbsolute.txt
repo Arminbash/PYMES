@@ -74,3 +74,231 @@ c:\users\armin\documents\visual studio 2013\Projects\Pymes\Pymes\bin\es\Microsof
 c:\users\armin\documents\visual studio 2013\Projects\Pymes\Pymes\obj\Debug\Pymes.csprojResolveAssemblyReference.cache
 c:\users\armin\documents\visual studio 2013\Projects\Pymes\Pymes\obj\Debug\Pymes.dll
 c:\users\armin\documents\visual studio 2013\Projects\Pymes\Pymes\obj\Debug\Pymes.pdb
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Pymes.dll.config
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Pymes.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Pymes.pdb
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Antlr3.Runtime.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\DataLayer.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\EntityFramework.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\EntityFramework.SqlServer.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.Owin.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.Owin.Security.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Newtonsoft.Json.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Owin.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\System.Web.Helpers.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\System.Web.Mvc.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\System.Web.Optimization.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\System.Web.Razor.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\System.Web.WebPages.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\System.Web.WebPages.Razor.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\WebGrease.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\DataLayer.pdb
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\System.Web.Helpers.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\System.Web.Mvc.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\System.Web.Optimization.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\System.Web.Razor.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\System.Web.WebPages.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\System.Web.WebPages.Razor.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Newtonsoft.Json.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Antlr3.Runtime.pdb
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\EntityFramework.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\EntityFramework.SqlServer.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.Owin.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.Owin.Security.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\es\System.Web.Razor.resources.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\es\EntityFramework.resources.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\es\Microsoft.Owin.resources.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\obj\Debug\Pymes.csprojResolveAssemblyReference.cache
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\obj\Debug\Pymes.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\Pymes\obj\Debug\Pymes.pdb
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Pymes.dll.config
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Pymes.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Pymes.pdb
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Antlr3.Runtime.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\DataLayer.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\EntityFramework.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\EntityFramework.SqlServer.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Newtonsoft.Json.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Owin.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\System.Web.Helpers.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\System.Web.Mvc.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\System.Web.Optimization.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\System.Web.Razor.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\System.Web.WebPages.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\System.Web.WebPages.Razor.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\WebGrease.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\DataLayer.pdb
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\System.Web.Helpers.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\System.Web.Mvc.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\System.Web.Optimization.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\System.Web.Razor.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\System.Web.WebPages.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\System.Web.WebPages.Razor.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Newtonsoft.Json.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Antlr3.Runtime.pdb
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\EntityFramework.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\EntityFramework.SqlServer.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\es\System.Web.Razor.resources.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\es\EntityFramework.resources.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\es\Microsoft.Owin.resources.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\obj\Debug\Pymes.csprojResolveAssemblyReference.cache
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\obj\Debug\Pymes.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\Pymes\obj\Debug\Pymes.pdb
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Pymes.dll.config
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Pymes.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Pymes.pdb
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Antlr3.Runtime.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\DataLayer.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\EntityFramework.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\EntityFramework.SqlServer.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.AspNet.Identity.Core.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.Cookies.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.Facebook.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.Google.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.OAuth.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.Twitter.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Web.Infrastructure.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Newtonsoft.Json.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Owin.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\System.Web.Helpers.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\System.Web.Mvc.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\System.Web.Optimization.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\System.Web.Razor.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\System.Web.WebPages.Deployment.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\System.Web.WebPages.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\System.Web.WebPages.Razor.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\WebGrease.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\DataLayer.pdb
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\System.Web.Helpers.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\System.Web.Mvc.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\System.Web.Optimization.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\System.Web.Razor.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\System.Web.WebPages.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\System.Web.WebPages.Deployment.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\System.Web.WebPages.Razor.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Newtonsoft.Json.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Antlr3.Runtime.pdb
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\EntityFramework.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\EntityFramework.SqlServer.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.AspNet.Identity.Core.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.Facebook.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.Cookies.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.OAuth.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.Google.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.Twitter.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\es\System.Web.Helpers.resources.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\es\System.Web.Mvc.resources.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\es\System.Web.Optimization.resources.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\es\System.Web.Razor.resources.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\es\System.Web.WebPages.resources.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\es\EntityFramework.resources.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\es\EntityFramework.SqlServer.resources.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\es\Microsoft.Owin.resources.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\es\Microsoft.Owin.Security.resources.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\es\Microsoft.Owin.Security.Google.resources.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\obj\Debug\Pymes.csprojResolveAssemblyReference.cache
+D:\sept917\Crud de Pymes\PYMES\Pymes\obj\Debug\Pymes.dll
+D:\sept917\Crud de Pymes\PYMES\Pymes\obj\Debug\Pymes.pdb

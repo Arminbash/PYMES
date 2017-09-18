@@ -45,6 +45,9 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.IdInventarioProcducto }) |
-    @Html.ActionLink("Back to List", "Index")
+    <a href="@Url.Action("Edit", "InventarioProducto", new { id = Model.IdInventarioProcducto }) " class="btn btn-primary">Editar</a>
+    <a href="~/Persona/Index" class="btn btn-default" style="background-color:#ff6a00; color:#ffffff !important;">Regresar a Lista</a>
+
+    @*@Html.ActionLink("Edit", "Edit", new { id = Model.IdInventarioProcducto }) |
+    @Html.ActionLink("Back to List", "Index")*@
 </p>

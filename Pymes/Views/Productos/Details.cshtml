@@ -4,7 +4,7 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>Detalles de Producto</h2>
 
 <div>
     <h4>Producto</h4>
@@ -45,6 +45,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.IdProducto }) |
-    @Html.ActionLink("Back to List", "Index")
+    <a href="@Url.Action("Edit", "Productos", new { id = Model.IdProducto }) " class="btn btn-primary">Editar</a>
+    <a href="~/Productos/Index" class="btn btn-default" style="background-color:#ff6a00; color:#ffffff !important;">Regresar a Lista</a>
 </p>

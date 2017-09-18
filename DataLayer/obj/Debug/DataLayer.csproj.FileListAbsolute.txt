@@ -10,3 +10,33 @@ c:\Users\Armin\documents\visual studio 2013\Projects\Pymes\DataLayer\bin\Debug\e
 c:\Users\Armin\documents\visual studio 2013\Projects\Pymes\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
 c:\Users\Armin\documents\visual studio 2013\Projects\Pymes\DataLayer\obj\Debug\DataLayer.dll
 c:\Users\Armin\documents\visual studio 2013\Projects\Pymes\DataLayer\obj\Debug\DataLayer.pdb
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\DataLayer\bin\Debug\DataLayer.dll.config
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\DataLayer\bin\Debug\DataLayer.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\DataLayer\bin\Debug\DataLayer.pdb
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\DataLayer\obj\Debug\DataLayer.dll
+C:\Users\Francisco Rios\Documents\GitHub\PYMES\DataLayer\obj\Debug\DataLayer.pdb
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\DataLayer\bin\Debug\DataLayer.dll.config
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\DataLayer\bin\Debug\DataLayer.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\DataLayer\bin\Debug\DataLayer.pdb
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\DataLayer\obj\Debug\DataLayer.dll
+C:\Users\Eddy\Desktop\Crud de Pymes\PYMES\DataLayer\obj\Debug\DataLayer.pdb
+D:\sept917\Crud de Pymes\PYMES\DataLayer\bin\Debug\DataLayer.dll.config
+D:\sept917\Crud de Pymes\PYMES\DataLayer\bin\Debug\DataLayer.dll
+D:\sept917\Crud de Pymes\PYMES\DataLayer\bin\Debug\DataLayer.pdb
+D:\sept917\Crud de Pymes\PYMES\DataLayer\bin\Debug\EntityFramework.dll
+D:\sept917\Crud de Pymes\PYMES\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\sept917\Crud de Pymes\PYMES\DataLayer\bin\Debug\EntityFramework.xml
+D:\sept917\Crud de Pymes\PYMES\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\sept917\Crud de Pymes\PYMES\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+D:\sept917\Crud de Pymes\PYMES\DataLayer\obj\Debug\DataLayer.dll
+D:\sept917\Crud de Pymes\PYMES\DataLayer\obj\Debug\DataLayer.pdb

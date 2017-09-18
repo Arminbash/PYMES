@@ -4,7 +4,7 @@
     ViewBag.Title = "Edit";
 }
 
-<h2>Edit</h2>
+<h2>Editar Producto</h2>
 
 
 @using (Html.BeginForm())
@@ -51,14 +51,16 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Guardar" class="btn btn-primary" />
             </div>
         </div>
     </div>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    <p>
+        <a href="~/Productos/Index" class="btn btn-default" style="background-color:#ff6a00; color:white !important;">Regregar a Lista</a>
+    </p>
 </div>
 
 @section Scripts {

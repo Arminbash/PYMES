@@ -13,7 +13,7 @@ namespace Pymes.Controllers
 {
     public class CuentasController : Controller
     {
-        private DefaultConnection db = new DefaultConnection();
+        private DefaultConnection2 db = new DefaultConnection2();
 
         // GET: /Cuentas/
         public async Task<ActionResult> Index()

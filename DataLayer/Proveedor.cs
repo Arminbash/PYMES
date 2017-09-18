@@ -14,6 +14,7 @@ namespace DataLayer
     
     public partial class Proveedor
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Proveedor()
         {
             this.CuentasxPagarProveedor = new HashSet<CuentasxPagarProveedor>();
@@ -27,7 +28,9 @@ namespace DataLayer
         public int Telefono { get; set; }
         public bool activo { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CuentasxPagarProveedor> CuentasxPagarProveedor { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MateriaPrima> MateriaPrima { get; set; }
         public virtual Persona Persona { get; set; }
     }

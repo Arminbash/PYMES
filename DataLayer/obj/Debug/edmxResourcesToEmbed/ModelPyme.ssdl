@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="PymesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="PymesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="__MigrationHistory">
     <Key>
       <PropertyRef Name="MigrationId" />
@@ -191,7 +191,7 @@
     <Property Name="Total" Type="int" Nullable="false" />
     <Property Name="activo" Type="bit" Nullable="false" />
   </EntityType>
-  <Association Name="FK__CostoProd__IdPro__4C6B5938">
+  <Association Name="FK__CostoProd__IdPro__0D7A0286">
     <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
     <End Role="CostoProduccion" Type="Self.CostoProduccion" Multiplicity="*" />
     <ReferentialConstraint>
@@ -203,7 +203,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__CostoProd__Preci__4B7734FF">
+  <Association Name="FK__CostoProd__Preci__0C85DE4D">
     <End Role="MateriaPrima" Type="Self.MateriaPrima" Multiplicity="1" />
     <End Role="CostoProduccion" Type="Self.CostoProduccion" Multiplicity="*" />
     <ReferentialConstraint>
@@ -215,7 +215,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__CuentasxP__IdMat__40F9A68C">
+  <Association Name="FK__CuentasxP__IdMat__02084FDA">
     <End Role="MateriaPrima" Type="Self.MateriaPrima" Multiplicity="1" />
     <End Role="CuentasxPagarProveedor" Type="Self.CuentasxPagarProveedor" Multiplicity="*" />
     <ReferentialConstraint>
@@ -227,7 +227,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__CuentasxP__IdPro__41EDCAC5">
+  <Association Name="FK__CuentasxP__IdPro__02FC7413">
     <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
     <End Role="CuentasxPagarProveedor" Type="Self.CuentasxPagarProveedor" Multiplicity="*" />
     <ReferentialConstraint>
@@ -239,7 +239,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__DetalleVe__IdPro__2CF2ADDF">
+  <Association Name="FK__DetalleVe__IdPro__6E01572D">
     <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
     <End Role="DetalleVenta" Type="Self.DetalleVenta" Multiplicity="*" />
     <ReferentialConstraint>
@@ -251,7 +251,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__DetalleVe__IdVen__2DE6D218">
+  <Association Name="FK__DetalleVe__IdVen__6EF57B66">
     <End Role="Venta" Type="Self.Venta" Multiplicity="1" />
     <End Role="DetalleVenta" Type="Self.DetalleVenta" Multiplicity="*" />
     <ReferentialConstraint>
@@ -263,7 +263,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Inventari__IdMat__3C34F16F">
+  <Association Name="FK__Inventari__IdMat__7D439ABD">
     <End Role="MateriaPrima" Type="Self.MateriaPrima" Multiplicity="1" />
     <End Role="InventarioMateriaPrima" Type="Self.InventarioMateriaPrima" Multiplicity="*" />
     <ReferentialConstraint>
@@ -275,7 +275,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Inventari__IdPro__32AB8735">
+  <Association Name="FK__Inventari__IdPro__73BA3083">
     <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
     <End Role="InventarioProducto" Type="Self.InventarioProducto" Multiplicity="*" />
     <ReferentialConstraint>
@@ -287,7 +287,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__MateriaPr__activ__37703C52">
+  <Association Name="FK__MateriaPr__activ__787EE5A0">
     <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
     <End Role="MateriaPrima" Type="Self.MateriaPrima" Multiplicity="*" />
     <ReferentialConstraint>
@@ -299,7 +299,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__PagoManoO__IdPer__46B27FE2">
+  <Association Name="FK__PagoManoO__IdPer__07C12930">
     <End Role="Persona" Type="Self.Persona" Multiplicity="1" />
     <End Role="PagoManoObra" Type="Self.PagoManoObra" Multiplicity="*" />
     <ReferentialConstraint>
@@ -311,7 +311,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Proveedor__activ__1EA48E88">
+  <Association Name="FK__Proveedor__activ__5FB337D6">
     <End Role="Persona" Type="Self.Persona" Multiplicity="1" />
     <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="*" />
     <ReferentialConstraint>
@@ -323,7 +323,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Usuario__activo__160F4887">
+  <Association Name="FK__Usuario__IdUser__571DF1D5">
     <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1" />
     <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
     <ReferentialConstraint>
@@ -335,7 +335,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Venta__activo__2739D489">
+  <Association Name="FK__Venta__activo__68487DD7">
     <End Role="Persona" Type="Self.Persona" Multiplicity="1" />
     <End Role="Venta" Type="Self.Venta" Multiplicity="*" />
     <ReferentialConstraint>
@@ -347,7 +347,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Venta__IdUsuario__282DF8C2">
+  <Association Name="FK__Venta__IdUsuario__693CA210">
     <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
     <End Role="Venta" Type="Self.Venta" Multiplicity="*" />
     <ReferentialConstraint>
@@ -435,59 +435,59 @@
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Venta" EntityType="Self.Venta" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK__CostoProd__IdPro__4C6B5938" Association="Self.FK__CostoProd__IdPro__4C6B5938">
+    <AssociationSet Name="FK__CostoProd__IdPro__0D7A0286" Association="Self.FK__CostoProd__IdPro__0D7A0286">
       <End Role="Producto" EntitySet="Producto" />
       <End Role="CostoProduccion" EntitySet="CostoProduccion" />
     </AssociationSet>
-    <AssociationSet Name="FK__CostoProd__Preci__4B7734FF" Association="Self.FK__CostoProd__Preci__4B7734FF">
+    <AssociationSet Name="FK__CostoProd__Preci__0C85DE4D" Association="Self.FK__CostoProd__Preci__0C85DE4D">
       <End Role="MateriaPrima" EntitySet="MateriaPrima" />
       <End Role="CostoProduccion" EntitySet="CostoProduccion" />
     </AssociationSet>
-    <AssociationSet Name="FK__CuentasxP__IdMat__40F9A68C" Association="Self.FK__CuentasxP__IdMat__40F9A68C">
+    <AssociationSet Name="FK__CuentasxP__IdMat__02084FDA" Association="Self.FK__CuentasxP__IdMat__02084FDA">
       <End Role="MateriaPrima" EntitySet="MateriaPrima" />
       <End Role="CuentasxPagarProveedor" EntitySet="CuentasxPagarProveedor" />
     </AssociationSet>
-    <AssociationSet Name="FK__CuentasxP__IdPro__41EDCAC5" Association="Self.FK__CuentasxP__IdPro__41EDCAC5">
+    <AssociationSet Name="FK__CuentasxP__IdPro__02FC7413" Association="Self.FK__CuentasxP__IdPro__02FC7413">
       <End Role="Proveedor" EntitySet="Proveedor" />
       <End Role="CuentasxPagarProveedor" EntitySet="CuentasxPagarProveedor" />
     </AssociationSet>
-    <AssociationSet Name="FK__DetalleVe__IdPro__2CF2ADDF" Association="Self.FK__DetalleVe__IdPro__2CF2ADDF">
+    <AssociationSet Name="FK__DetalleVe__IdPro__6E01572D" Association="Self.FK__DetalleVe__IdPro__6E01572D">
       <End Role="Producto" EntitySet="Producto" />
       <End Role="DetalleVenta" EntitySet="DetalleVenta" />
     </AssociationSet>
-    <AssociationSet Name="FK__DetalleVe__IdVen__2DE6D218" Association="Self.FK__DetalleVe__IdVen__2DE6D218">
+    <AssociationSet Name="FK__DetalleVe__IdVen__6EF57B66" Association="Self.FK__DetalleVe__IdVen__6EF57B66">
       <End Role="Venta" EntitySet="Venta" />
       <End Role="DetalleVenta" EntitySet="DetalleVenta" />
     </AssociationSet>
-    <AssociationSet Name="FK__Inventari__IdMat__3C34F16F" Association="Self.FK__Inventari__IdMat__3C34F16F">
+    <AssociationSet Name="FK__Inventari__IdMat__7D439ABD" Association="Self.FK__Inventari__IdMat__7D439ABD">
       <End Role="MateriaPrima" EntitySet="MateriaPrima" />
       <End Role="InventarioMateriaPrima" EntitySet="InventarioMateriaPrima" />
     </AssociationSet>
-    <AssociationSet Name="FK__Inventari__IdPro__32AB8735" Association="Self.FK__Inventari__IdPro__32AB8735">
+    <AssociationSet Name="FK__Inventari__IdPro__73BA3083" Association="Self.FK__Inventari__IdPro__73BA3083">
       <End Role="Producto" EntitySet="Producto" />
       <End Role="InventarioProducto" EntitySet="InventarioProducto" />
     </AssociationSet>
-    <AssociationSet Name="FK__MateriaPr__activ__37703C52" Association="Self.FK__MateriaPr__activ__37703C52">
+    <AssociationSet Name="FK__MateriaPr__activ__787EE5A0" Association="Self.FK__MateriaPr__activ__787EE5A0">
       <End Role="Proveedor" EntitySet="Proveedor" />
       <End Role="MateriaPrima" EntitySet="MateriaPrima" />
     </AssociationSet>
-    <AssociationSet Name="FK__PagoManoO__IdPer__46B27FE2" Association="Self.FK__PagoManoO__IdPer__46B27FE2">
+    <AssociationSet Name="FK__PagoManoO__IdPer__07C12930" Association="Self.FK__PagoManoO__IdPer__07C12930">
       <End Role="Persona" EntitySet="Persona" />
       <End Role="PagoManoObra" EntitySet="PagoManoObra" />
     </AssociationSet>
-    <AssociationSet Name="FK__Proveedor__activ__1EA48E88" Association="Self.FK__Proveedor__activ__1EA48E88">
+    <AssociationSet Name="FK__Proveedor__activ__5FB337D6" Association="Self.FK__Proveedor__activ__5FB337D6">
       <End Role="Persona" EntitySet="Persona" />
       <End Role="Proveedor" EntitySet="Proveedor" />
     </AssociationSet>
-    <AssociationSet Name="FK__Usuario__activo__160F4887" Association="Self.FK__Usuario__activo__160F4887">
+    <AssociationSet Name="FK__Usuario__IdUser__571DF1D5" Association="Self.FK__Usuario__IdUser__571DF1D5">
       <End Role="AspNetUsers" EntitySet="AspNetUsers" />
       <End Role="Usuario" EntitySet="Usuario" />
     </AssociationSet>
-    <AssociationSet Name="FK__Venta__activo__2739D489" Association="Self.FK__Venta__activo__2739D489">
+    <AssociationSet Name="FK__Venta__activo__68487DD7" Association="Self.FK__Venta__activo__68487DD7">
       <End Role="Persona" EntitySet="Persona" />
       <End Role="Venta" EntitySet="Venta" />
     </AssociationSet>
-    <AssociationSet Name="FK__Venta__IdUsuario__282DF8C2" Association="Self.FK__Venta__IdUsuario__282DF8C2">
+    <AssociationSet Name="FK__Venta__IdUsuario__693CA210" Association="Self.FK__Venta__IdUsuario__693CA210">
       <End Role="Usuario" EntitySet="Usuario" />
       <End Role="Venta" EntitySet="Venta" />
     </AssociationSet>
